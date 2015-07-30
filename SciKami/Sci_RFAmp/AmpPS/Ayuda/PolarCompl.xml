@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ * Generado por Ing. Manuel Pérez P. 2009
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"  xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:lang="es" xml:id="PolarCompl">
+  <info>
+    <pubdate>$LastChangedDate: 02-03-2009 $</pubdate>
+  </info>
+  <refnamediv>
+    <refname>PolarCompl</refname>
+    <refpurpose>  Transformación de Polar a complejo. </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+    <synopsis>C = PolarCompl(m,p)</synopsis>
+  </refsynopsisdiv>
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>m</term>
+        <listitem>
+          <para>
+            Magnitud del número polar
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>p</term>
+        <listitem>
+          <para>
+            Fase del número polar en grados rectangualres
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>C</term>
+        <listitem>
+          <para>
+            Número Complejo
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+  <refsection>
+    <title>Description</title>
+    <para>
+          Esta función realiza la conversión de polar a complejo
+    </para>
+  </refsection>
+  <refsection>
+    <title>Examples</title>
+    <programlisting role="example"><![CDATA[
+	//Esta función trabaja la fase usando grados rectangulares, por ejemplo:
+	//Para transformar un núemro cuya magnitud es 2 y su fase es 45°        
+	C=PolarCompl(2,45)
+	Ans: 
+	C  =   1.4142136 + 1.4142136i
+	//Si se desea trabajar con radianes se puede usar la función de la siguiente forma:
+	f=0.5235988	
+	d=f*180/%pi
+	C=PolarCompl(2,d)
+ 	C  =  1.7320508 + i
+	//donde f es la fase del número en radianes
+    ]]></programlisting>
+  </refsection>
+   <refsection>
+    <title>Authors</title>
+    <simplelist type="vert">
+      <member>Ing. Manuel Pérez P.</member>
+    </simplelist>
+  </refsection>
+ </refentry>

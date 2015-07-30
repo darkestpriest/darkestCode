@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ * Ajouter ici d'éventuels commentaires sur le fichier XML
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"  xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:lang="es" xml:id="analizoTRFS">
+  <info>
+    <pubdate>$LastChangedDate: 02-03-2009 $</pubdate>
+  </info>
+  <refnamediv>
+    <refname>analizoTRFS</refname>
+    <refpurpose>  Analizador de Transistores en RF usando Parámetros S </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+    <synopsis>[RL,RS,G] = analizoTRFS(a11,p11,a12,p12,a21,p21,a22,p22)</synopsis>
+  </refsynopsisdiv>
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>a11</term>
+        <listitem>
+          <para>
+            Módulo de S11
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>p11</term>
+        <listitem>
+          <para>
+            Fase de S11
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>a12</term>
+        <listitem>
+          <para>
+            Módulo de S12
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>p12</term>
+        <listitem>
+          <para>
+            Fase de S12
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>a21</term>
+        <listitem>
+          <para>
+            Módulo de S21
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>p21</term>
+        <listitem>
+          <para>
+            Fase de S21
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>a22</term>
+        <listitem>
+          <para>
+            Módulo de S22
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>p22</term>
+        <listitem>
+          <para>
+            Fase de S22
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>RL</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión hacia la carga
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>RS</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión hacia el generador
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>G</term>
+        <listitem>
+          <para>
+            Ganancia de Transconductancia del Amplificador
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+  <refsection>
+    <title>Description</title>
+    <para>
+          Esta función analiza la estabilidad de un transistor usado como amplificador de señales de alta frecuencia y da como resultado YS y YL, usando Parámetros S 
+    </para>
+  </refsection>
+  <refsection>
+    <title>Examples</title>
+    <programlisting role="example"><![CDATA[
+        [x,y,z]=analizoTRFS(1,45,2,-50,10,160,0.1,-80)
+    ]]></programlisting>
+  </refsection>
+  <refsection>
+    <title>See Also</title>
+    <simplelist type="inline">
+      <member>
+        <link linkend="add a reference name" >AnalizoTRF</link>
+      </member>
+      <member>
+        <link linkend="add a reference name">DRollet</link>
+      </member>
+    </simplelist>
+  </refsection>
+  <refsection>
+    <title>Authors</title>
+    <simplelist type="vert">
+      <member>Ing. Manuel Pérez P.</member>
+    </simplelist>
+  </refsection>
+  <refsection>
+     <title>Bibliography</title>
+       <para>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </para>
+     </refsection>
+  <refsection>
+     <title>Used Functions</title>
+       <para>
+         PolarCompl, DRollet, SMAG, GTS, RoL, RoS
+       </para>
+     </refsection>
+</refentry>

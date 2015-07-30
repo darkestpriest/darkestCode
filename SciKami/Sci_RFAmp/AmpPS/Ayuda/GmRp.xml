@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ * Generado por Ing. Manuel Pérez P. 2009
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"  xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:lang="es" xml:id="GmRp">
+  <info>
+    <pubdate>$LastChangedDate: 02-03-2009 $</pubdate>
+  </info>
+  <refnamediv>
+    <refname>GmRp</refname>
+    <refpurpose>  Calculo de Gm y Rpi de un Amplificador Emisor Común. </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+    <synopsis>[gm,rpi] = GmRp(hfe,Ic,vt)</synopsis>
+  </refsynopsisdiv>
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>hfe</term>
+        <listitem>
+          <para>
+            Hfe del BJT
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Ic</term>
+        <listitem>
+          <para>
+            Corriente de Colector
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>vt</term>
+        <listitem>
+          <para>
+            Tensión Térmica o potencial equivalente de temperatura
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>gm</term>
+        <listitem>
+          <para>
+            Transconductancia del BJT
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>rpi</term>
+        <listitem>
+          <para>
+            Resistencia de entrada del BJT en AC
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+  <refsection>
+    <title>Description</title>
+    <para>
+          Esta función realiza el cálculo de la Transcoductancia de un BJT y de Rpi. Parámetros dependientes de la polarización 
+    </para>
+  </refsection>
+  <refsection>
+    <title>Examples</title>
+    <programlisting role="example"><![CDATA[
+	//Se acostumbra colocar 25mV como lavor de Vt para fines prácticos
+	//Para el cálculo preciso de Vt se usa la fórmula:
+	//Vt=kT/q
+        [G,R]=GmRp(100,10e-3,25e-3)
+    ]]></programlisting>
+  </refsection>
+  <refsection>
+    <title>Authors</title>
+    <simplelist type="vert">
+      <member>Ing. Manuel Pérez P.</member>
+    </simplelist>
+  </refsection>
+ </refentry>

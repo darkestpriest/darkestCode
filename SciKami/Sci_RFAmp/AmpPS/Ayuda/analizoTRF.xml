@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ * Generado por Ing. Manuel Pérez P. 2009
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"  xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:lang="es" xml:id="analizoTRF">
+  <info>
+    <pubdate>$LastChangedDate: 02-03-2009 $</pubdate>
+  </info>
+  <refnamediv>
+    <refname>analizoTRF</refname>
+    <refpurpose> Analizador de Transistores en RF usando Parámetros Y </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+    <synopsis>analizoTRF = analizoTRF(yi,yo,yf,yr)</synopsis>
+  </refsynopsisdiv>
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>yi</term>
+        <listitem>
+          <para>
+            Admitancia de entrada del transistor
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>yo</term>
+        <listitem>
+          <para>
+            Admitancia de salida del transistor
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>yf</term>
+        <listitem>
+          <para>
+            Ganancia de Transconductancia en directo
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>yr</term>
+        <listitem>
+          <para>
+           Ganancia de transconductancia en reverso
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>analizoTRF</term>
+        <listitem>
+          <para>
+            Los resultados se muestran en pantalla
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+  <refsection>
+    <title>Description</title>
+    <para>
+          Esta función analiza la estabilidad de un transistor usado como amplificador de señales de alta frecuencia y da como resultado YS y YL, usando Parámetros Y.
+    </para>
+  </refsection>
+  <refsection>
+    <title>Examples</title>
+    <programlisting role="example"><![CDATA[
+        analizoTRF(1+%i,2+%i,20-%i*10,0.05-0.001*%i)
+    ]]></programlisting>
+  </refsection>
+  <refsection>
+    <title>See Also</title>
+    <simplelist type="inline">
+      <member>
+        <link linkend="add a reference name" >AmpEst</link>
+      </member>
+      <member>
+        <link linkend="add a reference name">AmpEst</link>
+      </member>
+	<member>
+        <link linkend="add a reference name">MAG</link>
+      </member>
+	<member>
+        <link linkend="add a reference name">GT</link>
+      </member>
+	<member>
+        <link linkend="add a reference name">CLinvill</link>
+      </member>
+	<member>
+        <link linkend="add a reference name">KStern</link>
+      </member>
+    </simplelist>
+  </refsection>
+  <refsection>
+    <title>Authors</title>
+    <simplelist type="vert">
+      <member>Ing. Manuel Pérez P.</member>
+    </simplelist>
+  </refsection>
+  <refsection>
+     <title>Bibliography</title>
+       <para>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </para>
+     </refsection>
+  <refsection>
+     <title>Used Functions</title>
+       <para>
+         MAG, GT, CLinvill, KStern, abs, real, imag
+       </para>
+     </refsection>
+</refentry>

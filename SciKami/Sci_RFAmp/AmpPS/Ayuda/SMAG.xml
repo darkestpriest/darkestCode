@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ * Generado por Ing. Manuel Pérez P. 2009
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"  xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:lang="es" xml:id="SMAG">
+  <info>
+    <pubdate>$LastChangedDate: 02-03-2009 $</pubdate>
+  </info>
+  <refnamediv>
+    <refname>SMAG</refname>
+    <refpurpose>  Cálculo de MAG (Parámetros S). </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+    <synopsis>M = SMAG(s11,s12,s21,s22,D,k)</synopsis>
+  </refsynopsisdiv>
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>s11</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión de entrada
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>s12</term>
+        <listitem>
+          <para>
+            Coeficiente de tranmisión inversa
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>s21</term>
+        <listitem>
+          <para>
+            Coeficiente de transmisión directa
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>s22</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión de Salida
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>D</term>
+        <listitem>
+          <para>
+            Constante Ds de un amplificador usando parámetros S
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>k</term>
+        <listitem>
+          <para>
+            Factor de Mérito para la estabilidad de Rollett
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>M</term>
+        <listitem>
+          <para>
+            Máxima Ganancia Disponible por el Transistor
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+  <refsection>
+    <title>Description</title>
+    <para>
+          Máxima Ganancia Disponible (Parámetros S) 
+    </para>
+  </refsection>
+  <refsection>
+    <title>Examples</title>
+    <programlisting role="example"><![CDATA[
+        M=SMAG(PolarCompl(0.4,162),PolarCompl(0.04,60),PolarCompl(5.2,63),PolarCompl(0.35,-39),d,k)
+    ]]></programlisting>
+  </refsection>
+  <refsection>
+    <title>See Also</title>
+    <simplelist type="inline">
+      <member>
+        <link linkend="add a reference name" >analizoTRFS</link>
+      </member>
+      <member>
+        <link linkend="add a reference name">GTS</link>
+      </member>
+    </simplelist>
+  </refsection>
+  <refsection>
+    <title>Authors</title>
+    <simplelist type="vert">
+      <member>Ing. Manuel Pérez P.</member>
+    </simplelist>
+  </refsection>
+  <refsection>
+     <title>Bibliography</title>
+       <para>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </para>
+     </refsection>
+  <refsection>
+     <title>Used Functions</title>
+       <para>
+         abs, sing, sqrt
+       </para>
+     </refsection>
+</refentry>

@@ -1,0 +1,29 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>GT</title><link rel="stylesheet" href="javahelp.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.73.2"><link rel="start" href="index.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="up" href="rn01.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="prev" href="rn01re06.html" title="ECap"><link rel="next" href="rn01re08.html" title="GTS"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="refentry" lang="es"><a name="GT"></a><div class="titlepage"></div><div class="refnamediv"><h2>Nombre de referencia</h2><p>GT &#8212;   C&aacute;lculo de la ganancia de un amplificador. </p></div><div class="refsynopsisdiv"><h2>Calling Sequence</h2><pre class="synopsis">G = GT(yi,yo,yf,yr,ys,yl)</pre></div><div class="refsection" lang="es"><a name="d0e559"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">yi</span></dt><dd><p>
+            Admitancia de entrada del transistor
+          </p></dd><dt><span class="term">yo</span></dt><dd><p>
+            Admitancia de salida del transistor
+          </p></dd><dt><span class="term">yf</span></dt><dd><p>
+            Ganancia de Transconductancia en directo
+          </p></dd><dt><span class="term">yr</span></dt><dd><p>
+           Ganancia de transconductancia en reverso
+          </p></dd><dt><span class="term">ys</span></dt><dd><p>
+            Admitancia del generador que garantiza la estabilidad del Amplificador
+          </p></dd><dt><span class="term">yl</span></dt><dd><p>
+            Admitancia de la carga que garantiza la estabilidad del Amplificador
+          </p></dd><dt><span class="term">G</span></dt><dd><p>
+            Ganancia de Transconductancia del Amplificador (P&aacute;rametros Y)
+          </p></dd></dl></div></div><div class="refsection" lang="es"><a name="d0e605"></a><h2>Description</h2><p>
+          Esta funci&oacute;n realiza el c&aacute;lculo de la ganancia de transconductancia de un amplificador, usando par&aacute;metros Y 
+    </p></div><div class="refsection" lang="es"><a name="d0e610"></a><h2>Examples</h2><pre class="programlisting">
+        --&gt;G=GT(1+%i,2+%i,20-%i*10,0.05-0.001*%i,10-%i,2+%i)
+    </pre></div><div class="refsection" lang="es"><a name="d0e615"></a><h2>See Also</h2><span class="simplelist">
+        <a class="link" href="">AmpEst</a>
+      , 
+        <a class="link" href="">AnalizoTRF</a>
+      </span></div><div class="refsection" lang="es"><a name="d0e629"></a><h2>Authors</h2><table class="simplelist" border="0" summary="Simple list"><tr><td>Ing. Manuel P&eacute;rez P.</td></tr></table></div><div class="refsection" lang="es"><a name="d0e635"></a><h2>Bibliography</h2><p>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </p></div><div class="refsection" lang="es"><a name="d0e640"></a><h2>Used Functions</h2><p>
+         real, abs
+       </p></div></div></body></html>

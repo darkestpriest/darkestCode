@@ -1,0 +1,23 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>PolarCompl</title><link rel="stylesheet" href="javahelp.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.73.2"><link rel="start" href="index.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="up" href="rn01.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="prev" href="rn01re13.html" title="OHart"><link rel="next" href="rn01re15.html" title="QRA"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="refentry" lang="es"><a name="PolarCompl"></a><div class="titlepage"></div><div class="refnamediv"><h2>Nombre de referencia</h2><p>PolarCompl &#8212;   Transformaci&oacute;n de Polar a complejo. </p></div><div class="refsynopsisdiv"><h2>Calling Sequence</h2><pre class="synopsis">C = PolarCompl(m,p)</pre></div><div class="refsection" lang="es"><a name="d0e1178"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">m</span></dt><dd><p>
+            Magnitud del n&uacute;mero polar
+          </p></dd><dt><span class="term">p</span></dt><dd><p>
+            Fase del n&uacute;mero polar en grados rectangualres
+          </p></dd><dt><span class="term">C</span></dt><dd><p>
+            N&uacute;mero Complejo
+          </p></dd></dl></div></div><div class="refsection" lang="es"><a name="d0e1200"></a><h2>Description</h2><p>
+          Esta funci&oacute;n realiza la conversi&oacute;n de polar a complejo
+    </p></div><div class="refsection" lang="es"><a name="d0e1205"></a><h2>Examples</h2><pre class="programlisting">
+	//Esta funci&oacute;n trabaja la fase usando grados rectangulares, por ejemplo:
+	//Para transformar un n&uacute;emro cuya magnitud es 2 y su fase es 45&deg;        
+	C=PolarCompl(2,45)
+	Ans: 
+	C  =   1.4142136 + 1.4142136i
+	//Si se desea trabajar con radianes se puede usar la funci&oacute;n de la siguiente forma:
+	f=0.5235988	
+	d=f*180/%pi
+	C=PolarCompl(2,d)
+ 	C  =  1.7320508 + i
+	//donde f es la fase del n&uacute;mero en radianes
+    </pre></div><div class="refsection" lang="es"><a name="d0e1210"></a><h2>Authors</h2><table class="simplelist" border="0" summary="Simple list"><tr><td>Ing. Manuel P&eacute;rez P.</td></tr></table></div></div></body></html>

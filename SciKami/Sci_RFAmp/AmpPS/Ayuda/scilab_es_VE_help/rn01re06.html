@@ -1,0 +1,23 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>ECap</title><link rel="stylesheet" href="javahelp.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.73.2"><link rel="start" href="index.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="up" href="rn01.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="prev" href="rn01re05.html" title="Ds"><link rel="next" href="rn01re07.html" title="GT"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="refentry" lang="es"><a name="ECap"></a><div class="titlepage"></div><div class="refnamediv"><h2>Nombre de referencia</h2><p>ECap &#8212;   Dise&ntilde;o de Circuito de Polarizaci&oacute;n de un Amplificador Emisor Com&uacute;n Autopolarizado. </p></div><div class="refsynopsisdiv"><h2>Calling Sequence</h2><pre class="synopsis">[Rc,Re,R1,R2] = ECap(Vce,Ic,hfe)</pre></div><div class="refsection" lang="es"><a name="d0e478"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">Vce</span></dt><dd><p>
+            Voltaje colector emisor deseado
+          </p></dd><dt><span class="term">Ic</span></dt><dd><p>
+            Corrriente de Colector deseada
+          </p></dd><dt><span class="term">hfe</span></dt><dd><p>
+            Hfe del BJT
+          </p></dd><dt><span class="term">Rc</span></dt><dd><p>
+            Resistencia de Colector
+          </p></dd><dt><span class="term">Re</span></dt><dd><p>
+            Resistencia de Emisor
+          </p></dd><dt><span class="term">R1</span></dt><dd><p>
+            R1, resistencia que conecta la base con tierra
+          </p></dd><dt><span class="term">R2</span></dt><dd><p>
+            R2, resistencia que conecta Vcc con la base
+          </p></dd></dl></div></div><div class="refsection" lang="es"><a name="d0e524"></a><h2>Description</h2><p>
+          Esta funci&oacute;n realiza el dise&ntilde;o de un circuito de Polarizaci&oacute;n de un Amplificador Emisor Com&uacute;n Autopolarizado, ofreciendo como resultado Rc, Re, R1 y R2. Adicionalmente, se muestra en pantalla el valor de Vcc e Ib
+    </p></div><div class="refsection" lang="es"><a name="d0e529"></a><h2>Examples</h2><pre class="programlisting">
+        [Rc,Re,R1,R1]=ECap(5,5e-3,160)
+    </pre></div><div class="refsection" lang="es"><a name="d0e534"></a><h2>Authors</h2><table class="simplelist" border="0" summary="Simple list"><tr><td>Ing. Manuel P&eacute;rez P.</td></tr></table></div><div class="refsection" lang="es"><a name="d0e540"></a><h2>Bibliography</h2><p>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </p></div></div></body></html>

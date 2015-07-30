@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ * Generado por Ing. Manuel Pérez P. 2009
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"  xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:lang="es" xml:id="GTS">
+  <info>
+    <pubdate>$LastChangedDate: 02-03-2009 $</pubdate>
+  </info>
+  <refnamediv>
+    <refname>GTS</refname>
+    <refpurpose>  Cálculo de la ganancia de un amplificador (Parámetros S). </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+    <synopsis>G = GTS(s11,s12,s21,s22,rol,ros)</synopsis>
+  </refsynopsisdiv>
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>s11</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión de entrada
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>s12</term>
+        <listitem>
+          <para>
+            Coeficiente de tranmisión inversa
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>s21</term>
+        <listitem>
+          <para>
+            Coeficiente de transmisión directa
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>s22</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión de Salida
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>rol</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión hacia la carga
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>ros</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión hacia el generador
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>G</term>
+        <listitem>
+          <para>
+            Ganancia de Transconductancia del Amplificador
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+  <refsection>
+    <title>Description</title>
+    <para>
+          Esta función realiza el cálculo de ganancia de un amplificador usando parametros S
+    </para>
+  </refsection>
+  <refsection>
+    <title>Examples</title>
+    <programlisting role="example"><![CDATA[
+        G=GTS(1+%i,2+%i,20-%i*10,0.05-0.001*%i,10-%i,2+%i)
+    ]]></programlisting>
+  </refsection>
+  <refsection>
+    <title>See Also</title>
+    <simplelist type="inline">
+      <member>
+        <link linkend="add a reference name" >analizoTRFS</link>
+      </member>
+      </simplelist>
+  </refsection>
+  <refsection>
+    <title>Authors</title>
+    <simplelist type="vert">
+      <member>Ing. Manuel Pérez P.</member>
+    </simplelist>
+  </refsection>
+  <refsection>
+     <title>Bibliography</title>
+       <para>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </para>
+     </refsection>
+  <refsection>
+     <title>Used Functions</title>
+       <para>
+         abs
+       </para>
+     </refsection>
+</refentry>

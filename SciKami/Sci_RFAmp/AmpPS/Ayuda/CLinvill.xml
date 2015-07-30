@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ * Generado por Ing. Manuel Pérez P. 2009
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"  xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:lang="es" xml:id="CLinvill">
+  <info>
+    <pubdate>$LastChangedDate: 02-03-2009 $</pubdate>
+  </info>
+  <refnamediv>
+    <refname>CLinvill</refname>
+    <refpurpose>  Criterio de estabilidad de Linvill. </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+    <synopsis>C = CLinvill(yi,yo,yf,yr)</synopsis>
+  </refsynopsisdiv>
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>yi</term>
+        <listitem>
+          <para>
+            Admitancia de entrada del transistor
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>yo</term>
+        <listitem>
+          <para>
+            Admitancia de salida del transistor
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>yf</term>
+        <listitem>
+          <para>
+            Ganancia de Transconductancia en directo
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>yr</term>
+        <listitem>
+          <para>
+           Ganancia de transconductancia en reverso
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>C</term>
+        <listitem>
+          <para>
+            Factor de Mérito para la estabilidad de Linvill
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+  <refsection>
+    <title>Description</title>
+    <para>
+          Esta función realiza el cálculo de estabilidad de Linvill 
+    </para>
+  </refsection>
+  <refsection>
+    <title>Examples</title>
+    <programlisting role="example"><![CDATA[
+        C=CLinvill(1+%i,2+%i,20-%i*10,0.05-0.001*%i)
+    ]]></programlisting>
+  </refsection>
+  <refsection>
+    <title>See Also</title>
+    <simplelist type="inline">
+      <member>
+        <link linkend="add a reference name" >AnalizoTRF</link>
+      </member>
+      </simplelist>
+  </refsection>
+  <refsection>
+    <title>Authors</title>
+    <simplelist type="vert">
+      <member>Ing. Manuel Pérez P.</member>
+    </simplelist>
+  </refsection>
+  <refsection>
+     <title>Bibliography</title>
+       <para>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </para>
+     </refsection>
+  <refsection>
+     <title>Used Functions</title>
+       <para>
+         abs, real
+       </para>
+     </refsection>
+</refentry>

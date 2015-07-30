@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ * Generado por Ing. Manuel Pérez P. 2009
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"  xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:lang="es" xml:id="KStern">
+  <info>
+    <pubdate>$LastChangedDate: 02-03-2009 $</pubdate>
+  </info>
+  <refnamediv>
+    <refname>KStern</refname>
+    <refpurpose>  Criterio de estabilidad de Stern. </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+    <synopsis>k = KStern(yi,yo,yf,yr,ys,yl)</synopsis>
+  </refsynopsisdiv>
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>yi</term>
+        <listitem>
+          <para>
+            Admitancia de entrada del transistor
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>yo</term>
+        <listitem>
+          <para>
+            Admitancia de salida del transistor
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>yf</term>
+        <listitem>
+          <para>
+            Ganancia de Transconductancia en directo
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>yr</term>
+        <listitem>
+          <para>
+           Ganancia de transconductancia en reverso
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>ys</term>
+        <listitem>
+          <para>
+            Admitancia del generador que garantiza la estabilidad del Amplificador
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>yl</term>
+        <listitem>
+          <para>
+            Admitancia de la carga que garantiza la estabilidad del Amplificador
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>k</term>
+        <listitem>
+          <para>
+            Factor de Mérito para la estabilidad de Stern
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+  <refsection>
+    <title>Description</title>
+    <para>
+          Esta función realiza el cálculo de estabilidad de Stern 
+    </para>
+  </refsection>
+  <refsection>
+    <title>Examples</title>
+    <programlisting role="example"><![CDATA[
+        K=KStern(1+%i,2+%i,20-%i*10,0.05-0.001*%i,10-%i,2+%i)
+    ]]></programlisting>
+  </refsection>
+  <refsection>
+    <title>See Also</title>
+    <simplelist type="inline">
+      <member>
+        <link linkend="add a reference name" >analizoTRF</link>
+      </member>
+      <member>
+        <link linkend="add a reference name">ampInEst</link>
+      </member>
+    </simplelist>
+  </refsection>
+  <refsection>
+    <title>Authors</title>
+    <simplelist type="vert">
+      <member>Ing. Manuel Pérez P.</member>
+    </simplelist>
+  </refsection>
+  <refsection>
+     <title>Bibliography</title>
+       <para>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </para>
+     </refsection>
+  <refsection>
+     <title>Used Functions</title>
+       <para>
+         real, abs
+       </para>
+     </refsection>
+</refentry>

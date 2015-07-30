@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ * Generado por Ing. Manuel Pérez P. 2009
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"  xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:lang="es" xml:id="OColp">
+  <info>
+    <pubdate>$LastChangedDate: 02-03-2009 $</pubdate>
+  </info>
+  <refnamediv>
+    <refname>OColp</refname>
+    <refpurpose>  Diseño de un oscilador Colpitts. </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+    <synopsis>[c1,c2,l3] = OColp(gm,f,rin)</synopsis>
+  </refsynopsisdiv>
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>gm</term>
+        <listitem>
+          <para>
+            Transconductancia del Transistor
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>f</term>
+        <listitem>
+          <para>
+            Frecuencia del Oscilador a diseñar
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>rin</term>
+        <listitem>
+          <para>
+            Impedancia de entrada de entrada
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>c1</term>
+        <listitem>
+          <para>
+            C1 del Oscilador Colpitts
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>c2</term>
+        <listitem>
+          <para>
+            C2 del oscilador Colpitts
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>l3</term>
+        <listitem>
+          <para>
+            L3 del Oscilador Colpitts
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+  <refsection>
+    <title>Description</title>
+    <para>
+          Esta función realiza el cálculo de los componentes necesarios para la implementación de un Oscilador Colpitts 
+    </para>
+  </refsection>
+  <refsection>
+    <title>Examples</title>
+    <programlisting role="example"><![CDATA[
+        [x,y,z]=OColp(0.2,100e6,500)
+    ]]></programlisting>
+  </refsection>
+  <refsection>
+    <title>See Also</title>
+    <simplelist type="inline">
+      <member>
+        <link linkend="add a reference name" >ECap</link>
+      </member>
+	<member>
+        <link linkend="add a reference name" >OHart</link>
+      </member>
+      </simplelist>
+  </refsection>
+  <refsection>
+    <title>Authors</title>
+    <simplelist type="vert">
+      <member>Ing. Manuel Pérez P.</member>
+    </simplelist>
+  </refsection>
+  <refsection>
+     <title>Bibliography</title>
+       <para>
+         RADIO-FREQUENCY AND MICROWAVE COMMUNICATION CIRCUITS - Devendra K. Misra
+	CIRCUITOS ELECTRÓNICOS, ANALISIS, SIMULACIÓN Y DISEÑO - Norbert R. Malik
+       </para>
+     </refsection>
+  </refentry>

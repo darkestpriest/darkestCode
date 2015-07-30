@@ -1,0 +1,27 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>YS</title><link rel="stylesheet" href="javahelp.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.73.2"><link rel="start" href="index.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="up" href="rn01.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="prev" href="rn01re24.html" title="YL"><link rel="next" href="rn01re26.html" title="analizoTRF"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="refentry" lang="es"><a name="YS"></a><div class="titlepage"></div><div class="refnamediv"><h2>Nombre de referencia</h2><p>YS &#8212;   C&aacute;lculo de YS de un amplificador RF. </p></div><div class="refsynopsisdiv"><h2>Calling Sequence</h2><pre class="synopsis">[Gs,Bs] = YS(yi,yo,yf,yr)</pre></div><div class="refsection" lang="es"><a name="d0e2085"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">yi</span></dt><dd><p>
+            Admitancia de entrada del transistor
+          </p></dd><dt><span class="term">yo</span></dt><dd><p>
+            Admitancia de salida del transistor
+          </p></dd><dt><span class="term">yf</span></dt><dd><p>
+            Ganancia de Transconductancia en directo
+          </p></dd><dt><span class="term">yr</span></dt><dd><p>
+           Ganancia de transconductancia en reverso
+          </p></dd><dt><span class="term">Gl</span></dt><dd><p>
+            Conductancia de YL
+          </p></dd><dt><span class="term">Bl</span></dt><dd><p>
+            Suceptancia de YL
+          </p></dd></dl></div></div><div class="refsection" lang="es"><a name="d0e2125"></a><h2>Description</h2><p>
+          AEsta funci&oacute;n realiza el c&aacute;lculo de la admitancia del generador que garantiza la estabilidad del amplificador 
+    </p></div><div class="refsection" lang="es"><a name="d0e2130"></a><h2>Examples</h2><pre class="programlisting">
+        [x,y]=YS(8+%i*5.7,0.4+%i*1.5,52-%i*20,0.01-%i*0.1)
+    </pre></div><div class="refsection" lang="es"><a name="d0e2135"></a><h2>See Also</h2><span class="simplelist">
+        <a class="link" href="">analizoTRF</a>
+      , 
+        <a class="link" href="">YL</a>
+      </span></div><div class="refsection" lang="es"><a name="d0e2149"></a><h2>Authors</h2><table class="simplelist" border="0" summary="Simple list"><tr><td>Ing. Manuel P&eacute;rez P.</td></tr></table></div><div class="refsection" lang="es"><a name="d0e2155"></a><h2>Bibliography</h2><p>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </p></div><div class="refsection" lang="es"><a name="d0e2160"></a><h2>Used Functions</h2><p>
+         sqrt, real, abs
+       </p></div></div></body></html>

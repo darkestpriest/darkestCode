@@ -1,0 +1,29 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>AmpInEst</title><link rel="stylesheet" href="javahelp.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.73.2"><link rel="start" href="index.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="up" href="rn01.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="prev" href="rn01re01.html" title="AmpEst"><link rel="next" href="rn01re03.html" title="CLinvill"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="refentry" lang="es"><a name="AmpInEst"></a><div class="titlepage"></div><div class="refnamediv"><h2>Nombre de referencia</h2><p>AmpInEst &#8212;   Analizador de Amplificadores Estables, usando los Par&aacute;metros Y del Transistor. </p></div><div class="refsynopsisdiv"><h2>Calling Sequence</h2><pre class="synopsis">AmpEst = AmpInEst(yi,yo,yf,yr,nf,k)</pre></div><div class="refsection" lang="es"><a name="d0e110"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">yi</span></dt><dd><p>
+            Admitancia de entrada del transistor
+          </p></dd><dt><span class="term">yo</span></dt><dd><p>
+            Admitancia de salida del transistor
+          </p></dd><dt><span class="term">yf</span></dt><dd><p>
+            Ganancia de Transconductancia en directo
+          </p></dd><dt><span class="term">yr</span></dt><dd><p>
+            Ganancia de transconductancia en reverso
+          </p></dd><dt><span class="term">nf</span></dt><dd><p>
+            Resistencia del generador para &oacute;ptima figura de ruido
+          </p></dd><dt><span class="term">k</span></dt><dd><p>
+            Valor de estabilidad de Stern deseado
+          </p></dd><dt><span class="term">AmpEst</span></dt><dd><p>
+            Los resultados obtenidos se imprimen en pantalla
+          </p></dd></dl></div></div><div class="refsection" lang="es"><a name="d0e156"></a><h2>Description</h2><p>
+          Esta funci&oacute;n se encarga de realizar el c&aacute;lculo de Ys, Zs, Yl y Zl de un amplificador potencialmente inestable en RF. Tambi&eacute;n ofrece como resultado la Ganancia del Amplificador en cuesti&oacute;n
+    </p></div><div class="refsection" lang="es"><a name="d0e161"></a><h2>Examples</h2><pre class="programlisting">
+        &gt;-- AmpEst(1+%i,2+%i,20-%i*10,0.05-0.001*%i,25,3)
+    </pre></div><div class="refsection" lang="es"><a name="d0e166"></a><h2>See Also</h2><span class="simplelist">
+        <a class="link" href="">AmpEst</a>
+      , 
+        <a class="link" href="">AnalizoTRF</a>
+      </span></div><div class="refsection" lang="es"><a name="d0e180"></a><h2>Authors</h2><table class="simplelist" border="0" summary="Simple list"><tr><td>Ing. Manuel P&eacute;rez P.</td></tr></table></div><div class="refsection" lang="es"><a name="d0e186"></a><h2>Bibliography</h2><p>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </p></div><div class="refsection" lang="es"><a name="d0e191"></a><h2>Used Functions</h2><p>
+         MAG, GT, abs, real, imag
+       </p></div></div></body></html>

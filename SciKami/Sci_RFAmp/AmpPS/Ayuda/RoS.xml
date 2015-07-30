@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ * Generado por Ing. Manuel Pérez P. 2009
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"  xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:lang="es" xml:id="RoS">
+  <info>
+    <pubdate>$LastChangedDate: 02-03-2009 $</pubdate>
+  </info>
+  <refnamediv>
+    <refname>RoS</refname>
+    <refpurpose>  Coeficiente de Reflexión hacia el generador. </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+    <synopsis>R = RoS(s11,s12,s21,s22,RL)</synopsis>
+  </refsynopsisdiv>
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>s11</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión de entrada
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>s12</term>
+        <listitem>
+          <para>
+            Coeficiente de tranmisión inversa
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>s21</term>
+        <listitem>
+          <para>
+            Coeficiente de transmisión directa
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>s22</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión de Salida
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>RL</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión hacia la carga
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>R</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión hacia el Generador
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+  <refsection>
+    <title>Description</title>
+    <para>
+         Esta función realiza el cálculo del coeficiente de reflexion de un amplificador hacia la el generador, usando Parámetros S 
+    </para>
+  </refsection>
+  <refsection>
+    <title>Examples</title>
+    <programlisting role="example"><![CDATA[
+        R=RoS(1+%i,2+%i,20-%i*10,0.05-0.001*%i,-0.02-0.02*%i)
+    ]]></programlisting>
+  </refsection>
+  <refsection>
+    <title>See Also</title>
+    <simplelist type="inline">
+      <member>
+        <link linkend="add a reference name" >RoL</link>
+      </member>
+      <member>
+        <link linkend="add a reference name">analizoRTFS</link>
+      </member>
+    </simplelist>
+  </refsection>
+  <refsection>
+    <title>Authors</title>
+    <simplelist type="vert">
+      <member>Ing. Manuel Pérez P.</member>
+    </simplelist>
+  </refsection>
+  <refsection>
+     <title>Bibliography</title>
+       <para>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </para>
+     </refsection>
+  <refsection>
+     <title>Used Functions</title>
+       <para>
+         atan, real, imag, sin, cos
+       </para>
+     </refsection>
+</refentry>

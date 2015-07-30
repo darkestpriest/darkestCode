@@ -1,0 +1,20 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>GmRp</title><link rel="stylesheet" href="javahelp.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.73.2"><link rel="start" href="index.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="up" href="rn01.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="prev" href="rn01re08.html" title="GTS"><link rel="next" href="rn01re10.html" title="KStern"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="refentry" lang="es"><a name="GmRp"></a><div class="titlepage"></div><div class="refnamediv"><h2>Nombre de referencia</h2><p>GmRp &#8212;   Calculo de Gm y Rpi de un Amplificador Emisor Com&uacute;n. </p></div><div class="refsynopsisdiv"><h2>Calling Sequence</h2><pre class="synopsis">[gm,rpi] = GmRp(hfe,Ic,vt)</pre></div><div class="refsection" lang="es"><a name="d0e754"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">hfe</span></dt><dd><p>
+            Hfe del BJT
+          </p></dd><dt><span class="term">Ic</span></dt><dd><p>
+            Corriente de Colector
+          </p></dd><dt><span class="term">vt</span></dt><dd><p>
+            Tensi&oacute;n T&eacute;rmica o potencial equivalente de temperatura
+          </p></dd><dt><span class="term">gm</span></dt><dd><p>
+            Transconductancia del BJT
+          </p></dd><dt><span class="term">rpi</span></dt><dd><p>
+            Resistencia de entrada del BJT en AC
+          </p></dd></dl></div></div><div class="refsection" lang="es"><a name="d0e788"></a><h2>Description</h2><p>
+          Esta funci&oacute;n realiza el c&aacute;lculo de la Transcoductancia de un BJT y de Rpi. Par&aacute;metros dependientes de la polarizaci&oacute;n 
+    </p></div><div class="refsection" lang="es"><a name="d0e793"></a><h2>Examples</h2><pre class="programlisting">
+	//Se acostumbra colocar 25mV como lavor de Vt para fines pr&aacute;cticos
+	//Para el c&aacute;lculo preciso de Vt se usa la f&oacute;rmula:
+	//Vt=kT/q
+        [G,R]=GmRp(100,10e-3,25e-3)
+    </pre></div><div class="refsection" lang="es"><a name="d0e798"></a><h2>Authors</h2><table class="simplelist" border="0" summary="Simple list"><tr><td>Ing. Manuel P&eacute;rez P.</td></tr></table></div></div></body></html>

@@ -1,0 +1,27 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>RoS</title><link rel="stylesheet" href="html.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.73.2"><link rel="start" href="index.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="up" href="category_amplificadores_de_pequena_senal_en_rf.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="prev" href="RoL.html" title="RoL"><link rel="next" href="SMAG.html" title="SMAG"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">RoS</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="RoL.html">Anterior</a>&nbsp;</td><th width="60%" align="center">Amplificadores de Peque&ntilde;a Se&ntilde;al en RF</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="SMAG.html">Siguiente</a></td></tr></table><hr></div><div class="refentry" lang="es"><a name="RoS"></a><div class="titlepage"></div><div class="refnamediv"><h2>Nombre de referencia</h2><p>RoS &#8212;   Coeficiente de Reflexi&oacute;n hacia el generador. </p></div><div class="refsynopsisdiv"><h2>Calling Sequence</h2><pre class="synopsis">R = RoS(s11,s12,s21,s22,RL)</pre></div><div class="refsection" lang="es"><a name="d0e1797"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">s11</span></dt><dd><p>
+            Coeficiente de Reflexi&oacute;n de entrada
+          </p></dd><dt><span class="term">s12</span></dt><dd><p>
+            Coeficiente de tranmisi&oacute;n inversa
+          </p></dd><dt><span class="term">s21</span></dt><dd><p>
+            Coeficiente de transmisi&oacute;n directa
+          </p></dd><dt><span class="term">s22</span></dt><dd><p>
+            Coeficiente de Reflexi&oacute;n de Salida
+          </p></dd><dt><span class="term">RL</span></dt><dd><p>
+            Coeficiente de Reflexi&oacute;n hacia la carga
+          </p></dd><dt><span class="term">R</span></dt><dd><p>
+            Coeficiente de Reflexi&oacute;n hacia el Generador
+          </p></dd></dl></div></div><div class="refsection" lang="es"><a name="d0e1837"></a><h2>Description</h2><p>
+         Esta funci&oacute;n realiza el c&aacute;lculo del coeficiente de reflexion de un amplificador hacia la el generador, usando Par&aacute;metros S 
+    </p></div><div class="refsection" lang="es"><a name="d0e1842"></a><h2>Examples</h2><pre class="programlisting">
+        R=RoS(1+%i,2+%i,20-%i*10,0.05-0.001*%i,-0.02-0.02*%i)
+    </pre></div><div class="refsection" lang="es"><a name="d0e1847"></a><h2>See Also</h2><span class="simplelist">
+        <a class="link" href="">RoL</a>
+      , 
+        <a class="link" href="">analizoRTFS</a>
+      </span></div><div class="refsection" lang="es"><a name="d0e1861"></a><h2>Authors</h2><table class="simplelist" border="0" summary="Simple list"><tr><td>Ing. Manuel P&eacute;rez P.</td></tr></table></div><div class="refsection" lang="es"><a name="d0e1867"></a><h2>Bibliography</h2><p>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </p></div><div class="refsection" lang="es"><a name="d0e1872"></a><h2>Used Functions</h2><p>
+         atan, real, imag, sin, cos
+       </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="RoL.html">Anterior</a>&nbsp;</td><td width="20%" align="center"><a accesskey="u" href="category_amplificadores_de_pequena_senal_en_rf.html">Subir</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="SMAG.html">Siguiente</a></td></tr><tr><td width="40%" align="left" valign="top">RoL&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Inicio</a></td><td width="40%" align="right" valign="top">&nbsp;SMAG</td></tr></table></div></body></html>

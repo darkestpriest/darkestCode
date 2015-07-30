@@ -1,0 +1,29 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>SMAG</title><link rel="stylesheet" href="html.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.73.2"><link rel="start" href="index.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="up" href="category_amplificadores_de_pequena_senal_en_rf.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="prev" href="RoS.html" title="RoS"><link rel="next" href="YL.html" title="YL"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">SMAG</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="RoS.html">Anterior</a>&nbsp;</td><th width="60%" align="center">Amplificadores de Peque&ntilde;a Se&ntilde;al en RF</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="YL.html">Siguiente</a></td></tr></table><hr></div><div class="refentry" lang="es"><a name="SMAG"></a><div class="titlepage"></div><div class="refnamediv"><h2>Nombre de referencia</h2><p>SMAG &#8212;   C&aacute;lculo de MAG (Par&aacute;metros S). </p></div><div class="refsynopsisdiv"><h2>Calling Sequence</h2><pre class="synopsis">M = SMAG(s11,s12,s21,s22,D,k)</pre></div><div class="refsection" lang="es"><a name="d0e1891"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">s11</span></dt><dd><p>
+            Coeficiente de Reflexi&oacute;n de entrada
+          </p></dd><dt><span class="term">s12</span></dt><dd><p>
+            Coeficiente de tranmisi&oacute;n inversa
+          </p></dd><dt><span class="term">s21</span></dt><dd><p>
+            Coeficiente de transmisi&oacute;n directa
+          </p></dd><dt><span class="term">s22</span></dt><dd><p>
+            Coeficiente de Reflexi&oacute;n de Salida
+          </p></dd><dt><span class="term">D</span></dt><dd><p>
+            Constante Ds de un amplificador usando par&aacute;metros S
+          </p></dd><dt><span class="term">k</span></dt><dd><p>
+            Factor de M&eacute;rito para la estabilidad de Rollett
+          </p></dd><dt><span class="term">M</span></dt><dd><p>
+            M&aacute;xima Ganancia Disponible por el Transistor
+          </p></dd></dl></div></div><div class="refsection" lang="es"><a name="d0e1937"></a><h2>Description</h2><p>
+          M&aacute;xima Ganancia Disponible (Par&aacute;metros S) 
+    </p></div><div class="refsection" lang="es"><a name="d0e1942"></a><h2>Examples</h2><pre class="programlisting">
+        M=SMAG(PolarCompl(0.4,162),PolarCompl(0.04,60),PolarCompl(5.2,63),PolarCompl(0.35,-39),d,k)
+    </pre></div><div class="refsection" lang="es"><a name="d0e1947"></a><h2>See Also</h2><span class="simplelist">
+        <a class="link" href="">analizoTRFS</a>
+      , 
+        <a class="link" href="">GTS</a>
+      </span></div><div class="refsection" lang="es"><a name="d0e1961"></a><h2>Authors</h2><table class="simplelist" border="0" summary="Simple list"><tr><td>Ing. Manuel P&eacute;rez P.</td></tr></table></div><div class="refsection" lang="es"><a name="d0e1967"></a><h2>Bibliography</h2><p>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </p></div><div class="refsection" lang="es"><a name="d0e1972"></a><h2>Used Functions</h2><p>
+         abs, sing, sqrt
+       </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="RoS.html">Anterior</a>&nbsp;</td><td width="20%" align="center"><a accesskey="u" href="category_amplificadores_de_pequena_senal_en_rf.html">Subir</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="YL.html">Siguiente</a></td></tr><tr><td width="40%" align="left" valign="top">RoS&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Inicio</a></td><td width="40%" align="right" valign="top">&nbsp;YL</td></tr></table></div></body></html>

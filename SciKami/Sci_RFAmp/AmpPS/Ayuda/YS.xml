@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ * Generado por Ing. Manuel Pérez P. 2009
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"  xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:lang="es" xml:id="YS">
+  <info>
+    <pubdate>$LastChangedDate: 02-03-2009 $</pubdate>
+  </info>
+  <refnamediv>
+    <refname>YS</refname>
+    <refpurpose>  Cálculo de YS de un amplificador RF. </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+    <synopsis>[Gs,Bs] = YS(yi,yo,yf,yr)</synopsis>
+  </refsynopsisdiv>
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>yi</term>
+        <listitem>
+          <para>
+            Admitancia de entrada del transistor
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>yo</term>
+        <listitem>
+          <para>
+            Admitancia de salida del transistor
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>yf</term>
+        <listitem>
+          <para>
+            Ganancia de Transconductancia en directo
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>yr</term>
+        <listitem>
+          <para>
+           Ganancia de transconductancia en reverso
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Gl</term>
+        <listitem>
+          <para>
+            Conductancia de YL
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Bl</term>
+        <listitem>
+          <para>
+            Suceptancia de YL
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+  <refsection>
+    <title>Description</title>
+    <para>
+          AEsta función realiza el cálculo de la admitancia del generador que garantiza la estabilidad del amplificador 
+    </para>
+  </refsection>
+  <refsection>
+    <title>Examples</title>
+    <programlisting role="example"><![CDATA[
+        [x,y]=YS(8+%i*5.7,0.4+%i*1.5,52-%i*20,0.01-%i*0.1)
+    ]]></programlisting>
+  </refsection>
+  <refsection>
+    <title>See Also</title>
+    <simplelist type="inline">
+      <member>
+        <link linkend="add a reference name" >analizoTRF</link>
+      </member>
+      <member>
+        <link linkend="add a reference name">YL</link>
+      </member>
+    </simplelist>
+  </refsection>
+  <refsection>
+    <title>Authors</title>
+    <simplelist type="vert">
+      <member>Ing. Manuel Pérez P.</member>
+    </simplelist>
+  </refsection>
+  <refsection>
+     <title>Bibliography</title>
+       <para>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </para>
+     </refsection>
+  <refsection>
+     <title>Used Functions</title>
+       <para>
+         sqrt, real, abs
+       </para>
+     </refsection>
+</refentry>

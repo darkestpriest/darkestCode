@@ -1,0 +1,23 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>RoL</title><link rel="stylesheet" href="javahelp.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.73.2"><link rel="start" href="index.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="up" href="rn01.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="prev" href="rn01re20.html" title="RVirtT"><link rel="next" href="rn01re22.html" title="RoS"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="refentry" lang="es"><a name="RoL"></a><div class="titlepage"></div><div class="refnamediv"><h2>Nombre de referencia</h2><p>RoL &#8212;   Coeficiente de Reflexi&oacute;n hacia la carga. </p></div><div class="refsynopsisdiv"><h2>Calling Sequence</h2><pre class="synopsis">R = RoL(s11,s22,D)</pre></div><div class="refsection" lang="es"><a name="d0e1715"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">s11</span></dt><dd><p>
+            Coeficiente de Reflexi&oacute;n de entrada
+          </p></dd><dt><span class="term">s22</span></dt><dd><p>
+            Coeficiente de Reflexi&oacute;n de Salida
+          </p></dd><dt><span class="term">D</span></dt><dd><p>
+            Constante Ds de un amplificador usando par&aacute;metros S
+          </p></dd><dt><span class="term">R</span></dt><dd><p>
+           Coeficiente de Reflexi&oacute;n hacia la carga
+          </p></dd></dl></div></div><div class="refsection" lang="es"><a name="d0e1743"></a><h2>Description</h2><p>
+          Esta funci&oacute;n realiza el c&aacute;lculo del coeficiente de reflexi&oacute;n de un amplificador hacia la carga, usando Par&aacute;metros S 
+    </p></div><div class="refsection" lang="es"><a name="d0e1748"></a><h2>Examples</h2><pre class="programlisting">
+        R=RoL(1+%i,0.05-0.001*%i,49.949+0.049*%i)
+    </pre></div><div class="refsection" lang="es"><a name="d0e1753"></a><h2>See Also</h2><span class="simplelist">
+        <a class="link" href="">analizoTRFS</a>
+      , 
+        <a class="link" href="">GTS</a>
+      </span></div><div class="refsection" lang="es"><a name="d0e1767"></a><h2>Authors</h2><table class="simplelist" border="0" summary="Simple list"><tr><td>Ing. MAnuel P&eacute;rez P.</td></tr></table></div><div class="refsection" lang="es"><a name="d0e1773"></a><h2>Bibliography</h2><p>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </p></div><div class="refsection" lang="es"><a name="d0e1778"></a><h2>Used Functions</h2><p>
+         atan, real, imag, sin, cos
+       </p></div></div></body></html>

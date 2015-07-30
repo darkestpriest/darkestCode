@@ -1,0 +1,33 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>analizoTRF</title><link rel="stylesheet" href="html.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.73.2"><link rel="start" href="index.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="up" href="category_amplificadores_de_pequena_senal_en_rf.html" title="Amplificadores de Peque&ntilde;a Se&ntilde;al en RF"><link rel="prev" href="YS.html" title="YS"><link rel="next" href="analizoTRFS.html" title="analizoTRFS"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">analizoTRF</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="YS.html">Anterior</a>&nbsp;</td><th width="60%" align="center">Amplificadores de Peque&ntilde;a Se&ntilde;al en RF</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="analizoTRFS.html">Siguiente</a></td></tr></table><hr></div><div class="refentry" lang="es"><a name="analizoTRF"></a><div class="titlepage"></div><div class="refnamediv"><h2>Nombre de referencia</h2><p>analizoTRF &#8212;  Analizador de Transistores en RF usando Par&aacute;metros Y </p></div><div class="refsynopsisdiv"><h2>Calling Sequence</h2><pre class="synopsis">analizoTRF = analizoTRF(yi,yo,yf,yr)</pre></div><div class="refsection" lang="es"><a name="d0e2179"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">yi</span></dt><dd><p>
+            Admitancia de entrada del transistor
+          </p></dd><dt><span class="term">yo</span></dt><dd><p>
+            Admitancia de salida del transistor
+          </p></dd><dt><span class="term">yf</span></dt><dd><p>
+            Ganancia de Transconductancia en directo
+          </p></dd><dt><span class="term">yr</span></dt><dd><p>
+           Ganancia de transconductancia en reverso
+          </p></dd><dt><span class="term">analizoTRF</span></dt><dd><p>
+            Los resultados se muestran en pantalla
+          </p></dd></dl></div></div><div class="refsection" lang="es"><a name="d0e2213"></a><h2>Description</h2><p>
+          Esta funci&oacute;n analiza la estabilidad de un transistor usado como amplificador de se&ntilde;ales de alta frecuencia y da como resultado YS y YL, usando Par&aacute;metros Y.
+    </p></div><div class="refsection" lang="es"><a name="d0e2218"></a><h2>Examples</h2><pre class="programlisting">
+        analizoTRF(1+%i,2+%i,20-%i*10,0.05-0.001*%i)
+    </pre></div><div class="refsection" lang="es"><a name="d0e2223"></a><h2>See Also</h2><span class="simplelist">
+        <a class="link" href="">AmpEst</a>
+      , 
+        <a class="link" href="">AmpEst</a>
+      , 
+        <a class="link" href="">MAG</a>
+      , 
+        <a class="link" href="">GT</a>
+      , 
+        <a class="link" href="">CLinvill</a>
+      , 
+        <a class="link" href="">KStern</a>
+      </span></div><div class="refsection" lang="es"><a name="d0e2257"></a><h2>Authors</h2><table class="simplelist" border="0" summary="Simple list"><tr><td>Ing. Manuel P&eacute;rez P.</td></tr></table></div><div class="refsection" lang="es"><a name="d0e2263"></a><h2>Bibliography</h2><p>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </p></div><div class="refsection" lang="es"><a name="d0e2268"></a><h2>Used Functions</h2><p>
+         MAG, GT, CLinvill, KStern, abs, real, imag
+       </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="YS.html">Anterior</a>&nbsp;</td><td width="20%" align="center"><a accesskey="u" href="category_amplificadores_de_pequena_senal_en_rf.html">Subir</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="analizoTRFS.html">Siguiente</a></td></tr><tr><td width="40%" align="left" valign="top">YS&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Inicio</a></td><td width="40%" align="right" valign="top">&nbsp;analizoTRFS</td></tr></table></div></body></html>

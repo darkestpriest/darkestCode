@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ * Generado por Ing. Manuel Pérez P. 2009
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"  xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:lang="es" xml:id="Ds">
+  <info>
+    <pubdate>$LastChangedDate: 02-03-2009 $</pubdate>
+  </info>
+  <refnamediv>
+    <refname>Ds</refname>
+    <refpurpose>  Constante Ds de un transistor (Parámetros S). </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+    <synopsis>D = Ds(s11,s12,s21,s22)</synopsis>
+  </refsynopsisdiv>
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>s11</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión de entrada
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>s12</term>
+        <listitem>
+          <para>
+            Coeficiente de tranmisión inversa
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>s21</term>
+        <listitem>
+          <para>
+            Coeficiente de transmisión directa
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>s22</term>
+        <listitem>
+          <para>
+            Coeficiente de Reflexión de Salida
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>D</term>
+        <listitem>
+          <para>
+            Constante Ds del Transistor
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+  <refsection>
+    <title>Description</title>
+    <para>
+          Esta función realiza el cálculo de la constante Ds del Transistor 
+    </para>
+  </refsection>
+  <refsection>
+    <title>Examples</title>
+    <programlisting role="example"><![CDATA[
+	//Esta función requiere el ingreso de los Parámetros en su forma compleja.
+	//En el caso de tener los parámetros S en su forma Polar, como sucede en la mayoría de los casos
+	//es posible utilizar la función PolarCompl para transformar un número Polar a su forma Compleja
+	//También se puede transformar directamente en los parámetros de entrada de la función Ds, como se muestra a continuación:        
+	D=Ds(PolarCompl(1,45),PolarCompl(2,-50),PolarCompl(10,160),PolarCompl(0.1,-80))
+     ]]></programlisting>
+  </refsection>
+  <refsection>
+    <title>See Also</title>
+    <simplelist type="inline">
+      <member>
+        <link linkend="add a reference name" >analizoTRFS</link>
+      </member>
+      </simplelist>
+  </refsection>
+  <refsection>
+    <title>Authors</title>
+    <simplelist type="vert">
+      <member>Ing. Manuel Pérez P.</member>
+    </simplelist>
+  </refsection>
+  <refsection>
+     <title>Bibliography</title>
+       <para>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </para>
+     </refsection>
+  </refentry>

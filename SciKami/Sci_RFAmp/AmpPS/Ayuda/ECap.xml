@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ * Generado por Ing. Manuel Pérez P. 2009
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg"  xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:lang="es" xml:id="ECap">
+  <info>
+    <pubdate>$LastChangedDate: 02-03-2009 $</pubdate>
+  </info>
+  <refnamediv>
+    <refname>ECap</refname>
+    <refpurpose>  Diseño de Circuito de Polarización de un Amplificador Emisor Común Autopolarizado. </refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+    <synopsis>[Rc,Re,R1,R2] = ECap(Vce,Ic,hfe)</synopsis>
+  </refsynopsisdiv>
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>Vce</term>
+        <listitem>
+          <para>
+            Voltaje colector emisor deseado
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Ic</term>
+        <listitem>
+          <para>
+            Corrriente de Colector deseada
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>hfe</term>
+        <listitem>
+          <para>
+            Hfe del BJT
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Rc</term>
+        <listitem>
+          <para>
+            Resistencia de Colector
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Re</term>
+        <listitem>
+          <para>
+            Resistencia de Emisor
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>R1</term>
+        <listitem>
+          <para>
+            R1, resistencia que conecta la base con tierra
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>R2</term>
+        <listitem>
+          <para>
+            R2, resistencia que conecta Vcc con la base
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+  <refsection>
+    <title>Description</title>
+    <para>
+          Esta función realiza el diseño de un circuito de Polarización de un Amplificador Emisor Común Autopolarizado, ofreciendo como resultado Rc, Re, R1 y R2. Adicionalmente, se muestra en pantalla el valor de Vcc e Ib
+    </para>
+  </refsection>
+  <refsection>
+    <title>Examples</title>
+    <programlisting role="example"><![CDATA[
+        [Rc,Re,R1,R1]=ECap(5,5e-3,160)
+    ]]></programlisting>
+  </refsection>
+  <refsection>
+    <title>Authors</title>
+    <simplelist type="vert">
+      <member>Ing. Manuel Pérez P.</member>
+    </simplelist>
+  </refsection>
+  <refsection>
+     <title>Bibliography</title>
+       <para>
+         RF CIRCUIT DESIGN - CHRIS BOWICK
+       </para>
+     </refsection>
+  </refentry>
